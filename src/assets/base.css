@@ -1,13 +1,57 @@
+@font-face {
+  font-family: 'Irish Grover';
+  src: url('../fonts/IrishGrover-Regular.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #FDB1D1;
+}
+
+header {
+  background-color: #FDB1D1;
+  font-size: 20px;
+}
+
+footer{
+  font-size: 13px;
+}
+
+h1{
+  font-family: 'Irish Grover';
+  src: url('../fonts/IrishGrover-Regular.ttf') format('truetype');
+  font-size: 80px;
+}
+
+#app {
+  background-color: #FDB1D1; /* Sätt bakgrundsfärgen till rosa */
+  /* Andra stilar för din app om det behövs */
+}
+
+.navbar {
+  background-color: #FDB1D1;
+  font-family: 'Irish Grover', sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 30px; /* Anpassa storleken efter behov */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 10px; /* Anpassa storleken efter behov */
 }
 
 .title{
   display: flex;
   justify-content: center;
   padding-top: 10vh;
-  padding-bottom: 2vh
+  padding-bottom: 10vh
 }
