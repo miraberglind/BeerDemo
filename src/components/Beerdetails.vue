@@ -1,4 +1,5 @@
 <template>
+  <!-- Huvudsektionen för ölsortens detaljer -->
   <div class="beer-details">
     <h2>{{ beer.name }}</h2>
     <img :src="beer.src" :alt="'Bild på ölsorten ' + beer.name">
@@ -13,6 +14,7 @@
 import { defineComponent, ref } from 'vue';
 import { useCartStore } from '../stores/cart';
 
+// Gränssnitt för ölsorten
 interface Beer {
   name: string;
   src: string;
@@ -29,18 +31,20 @@ export default defineComponent({
     }
   },
   setup(props) {
-    const cartStore = useCartStore();
+    const cartStore = useCartStore(); // Använd kundvagnsstoren
 
+    // Funktion för att lägga till ölsorten i kundvagnen
     const addToCart = () => {
       cartStore.addToCart(props.beer);
     };
 
+    // Funktion för att ta bort ölsorten från kundvagnen
     const removeFromCart = (index: number) => {
       cartStore.removeFromCart(index);
     };
 
     return {
-      cart: cartStore.cart,
+      cart: cartStore.cart, // Aktuell kundvagn
       addToCart,
       removeFromCart
     };
