@@ -20,14 +20,16 @@ Step onto the court of refreshment and prepare for a game-changing experience li
 
 <style scoped>
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 10vh;
-  padding: 20vh;
   text-align: center;
-  margin-top: 10vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#wrapper-hero {
+  text-align: center;
+  margin-top: 50px;
 }
 
 </style>

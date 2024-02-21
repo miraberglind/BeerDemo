@@ -49,6 +49,10 @@ p {
   font-size: 10px; /* Anpassa storleken efter behov */
 }
 
+#offcanvasNavbar {
+  background-color: #97EAEF; /* Ange din önskade bakgrundsfärg här */
+}
+
 .title {
   display: flex;
   justify-content: center;
