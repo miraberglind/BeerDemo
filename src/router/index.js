@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import OurBeers from '../views/OurBeers.vue'
 import EpicImages from '../views/EpicImages.vue'
 import Weather from '../views/Weather.vue'
+import BeerDetails from '../components/BeerDetails.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,8 +33,14 @@ const router = createRouter({
       path: '/Weather',
       name: 'Weather',
       component: Weather
+    },
+    {
+      path: '/beer/:id',
+      name: 'beer-details',
+      component: BeerDetails
     }
   ]
-})
+});
+
 
 export default router

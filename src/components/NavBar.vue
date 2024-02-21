@@ -8,8 +8,9 @@ import {RouterLink, RouterView} from 'vue-router'
     <!-- Navbar med en fast position högst upp på sidan -->
     <nav class="navbar">
       <div class="container-fluid">
-        <!-- En RouterLink som fungerar som en länk till startsidan och har texten "Goodminton beer" -->
-        <RouterLink class="navbar-brand" to="/" style="display: block; text-align: center;">GOODMINTON BEER</RouterLink>
+        <RouterLink class="navbar-brand" to="/" style="display: block; text-align: center;">
+      <img src="/src/assets/img/goodminton_logo.png" alt="Goodminton Beer" style="max-height: 80px;">
+    </RouterLink>
 
         <!-- En knapp för att visa offcanvas-menyen när skärmen är mindre -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -28,9 +29,7 @@ import {RouterLink, RouterView} from 'vue-router'
               <li class="nav-item">
                 <RouterLink class="nav-link active" to="/">Home</RouterLink>
               </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/about">About</RouterLink>
-              </li>
+
               <li class="nav-item">
                 <RouterLink class="nav-link" to="/ourbeers">Our Beers</RouterLink>
               </li>
@@ -39,6 +38,9 @@ import {RouterLink, RouterView} from 'vue-router'
               </li>
               <li class="nav-item">
                 <RouterLink class="nav-link" to="/epic-images">Epic Images</RouterLink>
+                <li class="nav-item">
+                <RouterLink class="nav-link" to="/about">About</RouterLink>
+              </li>
               </li>
             </ul>
           </div>
