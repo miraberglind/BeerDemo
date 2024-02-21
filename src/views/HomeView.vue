@@ -1,8 +1,10 @@
 
 <script setup>
+    import UserAge from '../components/UserAge.vue';
 
 </script>
 <template>
+    <UserAge />
     <div id="wrapper-hero">
         <img
         src="../assets/img/GOODMINTON_BEER_w_background.png"
@@ -10,8 +12,6 @@
   alt="..."
         />
     </div>
-
-
 </template>
 
 <style scoped>

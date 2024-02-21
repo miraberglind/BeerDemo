@@ -1,39 +1,39 @@
-@font-face {
-  font-family: 'Irish Grover';
-  src: url('../fonts/IrishGrover-Regular.ttf') format('truetype');
-}
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: #FDB1D1;
+  background-color: #fdb1d1; /* Du kan använda hexadecimal eller RGB-värde */
 }
 
 header {
-  background-color: #FDB1D1;
+  background-color: #fdb1d1; /* Du kan använda hexadecimal eller RGB-värde */
   font-size: 20px;
+  font-family: 'PatuaOne-Regular', sans-serif; /* Använd din importerade font här */
 }
 
-footer{
+footer {
   font-size: 13px;
 }
 
-h1{
-  font-family: 'Irish Grover';
-  src: url('../fonts/IrishGrover-Regular.ttf') format('truetype');
-  font-size: 80px;
+h1, h2, h3 {
+  font-family: 'PatuaOne-Regular', sans-serif; /* Använd din importerade font här */
+  font-size: 50px; /* Ställ in storleken efter behov */
+}
+
+p {
+  font-family: 'MavenPro-Regular', sans-serif; /* Använd din importerade font här */
+  font-size: 16px; /* Ställ in storleken efter behov */
 }
 
 #app {
-  background-color: #FDB1D1; /* Sätt bakgrundsfärgen till rosa */
+  background-color: #fdb1d1; /* Du kan använda hexadecimal eller RGB-värde */
   /* Andra stilar för din app om det behövs */
 }
 
 .navbar {
-  background-color: #FDB1D1;
-  font-family: 'Irish Grover', sans-serif;
+  background-color: #fdb1d1; /* Du kan använda hexadecimal eller RGB-värde */
+  font-family: 'Irish Grover', sans-serif; /* Använd din importerade font här */
   font-size: 20px;
   justify-content: center;
   align-items: center;
@@ -49,9 +49,9 @@ h1{
   font-size: 10px; /* Anpassa storleken efter behov */
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
   padding-top: 10vh;
-  padding-bottom: 10vh
+  padding-bottom: 10vh;
 }

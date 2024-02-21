@@ -2,14 +2,20 @@
 <script setup>
     import NavBar from './components/NavBar.vue';
     import FooterComponent from './components/FooterComponent.vue';
+    import { useCounterStore } from './stores/counter';
+
+    const store = useCounterStore();
+    store.count++;
+    store.increment(2);
+
 </script>
 
 <!-- Denna del av koden utgör HTML-mallen och använder de importerade komponenterna NavBar och FooterComponent -->
 <template>
     <!-- Här används NavBar-komponenten för att skapa en navigeringsfält överst på sidan -->
     <NavBar />
+    <Vuetify />
 <main />
-
     <!-- Här används FooterComponent-komponenten för att skapa en sidfot längst ned på sidan -->
     <FooterComponent />
 </template>

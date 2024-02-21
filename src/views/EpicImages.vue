@@ -1,6 +1,7 @@
 <template>
   <div class="spacebeer">
     <h1>Space Beer</h1>
+    <h3>Take a beer and enjoy earth from space</h3>
     <div v-if="images.length > 0">
       <div v-for="(image, index) in images" :key="index">
         <img :src="getImageUrl(image.image)" :alt="image.caption" />
@@ -49,13 +50,13 @@ export default {
 <style scoped>
 
 .spacebeer {
-  display: flex;
+  display: grid;
   justify-content: center;
   margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 img {
-  width: 280px;
+  width: 500px;
 }
 </style>
